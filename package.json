@@ -1,0 +1,67 @@
+{
+  "name": "api-template",
+  "version": "1.0.0",
+  "description": "REST API template, powered by Node, Express, MongoDB and Auth0",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix --ext js --ext jsx --ext ts --ext tsx src",
+    "start": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
+    "prod": "node build/server.js",
+    "build": "rimraf build && tsc --outDir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohodegaa/api-template.git"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "Typescript",
+    "MongoDB",
+    "Mongoose",
+    "Typegoose",
+    "Express",
+    "Node",
+    "Auth0"
+  ],
+  "author": "Odecon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohodegaa/api-template/issues"
+  },
+  "homepage": "https://github.com/ohodegaa/api-template#readme",
+  "dependencies": {
+    "@sendgrid/mail": "6.5.3",
+    "@typegoose/typegoose": "6.3.2",
+    "chalk": "3.0.0",
+    "class-transformer": "0.2.3",
+    "class-validator": "0.11.0",
+    "cors": "2.8.5",
+    "date-fns": "2.9.0",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "express-jwt": "5.3.1",
+    "jwks-rsa": "1.7.0",
+    "mongoose": "5.9.2",
+    "mongoose-autopopulate": "0.12.0",
+    "morgan": "1.9.1",
+    "rimraf": "3.0.2"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.6",
+    "@types/dotenv": "8.2.0",
+    "@types/express": "4.17.2",
+    "@types/lodash": "4.14.149",
+    "@types/mongoose": "5.7.1",
+    "@types/morgan": "1.7.37",
+    "@typescript-eslint/eslint-plugin": "2.20.0",
+    "@typescript-eslint/parser": "2.20.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "prettier": "1.19.1",
+    "ts-node-dev": "1.0.0-pre.44",
+    "typescript": "3.8.2"
+  }
+}
